@@ -1,4 +1,4 @@
-FROM debian:9.5-slim
+FROM alpine:3.12
 
-RUN apt update
-RUN apt -yq install rsync sshpass openssh-client curl git
+RUN apk update
+RUN apk add --no-cache install rsync sshpass openssh-client curl git
